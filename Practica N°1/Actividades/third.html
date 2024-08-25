@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia de Práctica N° 03: Tablas</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .styled-table th, .styled-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .styled-table th {
+            background-color: #f4f4f4;
+        }
+
+        .highlighted-col {
+            background-color: #97DB9A;
+        }
+
+        .special-col {
+            background-color: #DCC48E;
+            border: 4px solid #C1437A;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Parte A: Crea tu primera tabla</h2>
+    <table>
+        <tr>
+            <td>Hola, soy tu primera celda.</td>
+        </tr>
+        <tr>
+            <td>Soy tu segunda celda.</td>
+            <td>Soy tu tercera celda.</td>
+            <td>Soy tu cuarta celda.</td>
+        </tr>
+        <tr>
+            <td>Hola, soy tu primera celda.</td>
+            <td>Soy tu segunda celda.</td>
+            <td>Soy tu tercera celda.</td>
+            <td>Soy tu cuarta celda.</td>
+        </tr>
+        <tr>
+            <td>Segunda fila, primera celda</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+            <td>Celda 4</td>
+        </tr>
+    </table>
+
+    <h2>Parte B: Encabezados de tabla</h2>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+                <th>Encabezado 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+                <td>Celda 3</td>
+                <td>Celda 4</td>
+            </tr>
+            <tr>
+                <td>Celda 5</td>
+                <td>Celda 6</td>
+                <td>Celda 7</td>
+                <td>Celda 8</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Parte C: Proporcionar estilo común a las columnas</h2>
+    <table class="styled-table">
+        <colgroup>
+            <col>
+            <col style="background-color: yellow;">
+        </colgroup>
+        <tr>
+            <th>Dato 1</th>
+            <th>Dato 2</th>
+        </tr>
+        <tr>
+            <td>Calcuta</td>
+            <td>Pizza</td>
+        </tr>
+        <tr>
+            <td>Robots</td>
+            <td>Jazz</td>
+        </tr>
+    </table>
+
+    <h2>Parte D: Aprendizaje Activo: Colgroup y col</h2>
+    <table class="styled-table">
+        <colgroup>
+            <col>
+            <col>
+            <col class="highlighted-col">
+            <col style="width:42px;">
+            <col class="highlighted-col">
+            <col class="special-col">
+            <col style="width:42px;">
+            <col style="width:42px;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Period</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+                <th>Domingo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1st Period</td>
+                <td>English</td>
+                <td></td>
+                <td></td>
+                <td>German</td>
+                <td>Dutch</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2nd Period</td>
+                <td>English</td>
+                <td>English</td>
+                <td></td>
+                <td>German</td>
+                <td>Dutch</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3rd Period</td>
+                <td></td>
+                <td>German</td>
+                <td></td>
+                <td>German</td>
+                <td>Dutch</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4th Period</td>
+                <td></td>
+                <td>English</td>
+                <td></td>
+                <td>English</td>
+                <td>Dutch</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
