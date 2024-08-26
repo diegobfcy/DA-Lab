@@ -1,0 +1,42 @@
+header {
+    background-color: black;
+    color: white;
+}
+h1 {
+    text-align: center;
+}
+nav {
+    background-color: #333;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+main section {
+    padding: 10px;
+}
+h2 {
+    color: darkblue;
+}
+img {
+    width: 100%;
+}
+figcaption {
+    text-align: center;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer a {
+    color: white;
+}

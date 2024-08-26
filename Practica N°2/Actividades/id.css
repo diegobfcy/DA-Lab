@@ -1,0 +1,38 @@
+#main-header {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+#title {
+    font-size: 2em;
+    color: darkblue;
+}
+
+#main-nav {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+#nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#nav-item1, #nav-item2, #nav-item3 {
+    display: inline;
+    margin-right: 15px;
+}
+
+#section1, #section2 {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+#main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
