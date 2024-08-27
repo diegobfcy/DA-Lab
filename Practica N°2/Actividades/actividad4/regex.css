@@ -1,0 +1,23 @@
+[id$="o"] {
+    color: brown;
+    text-transform: uppercase;
+}
+
+input[id^="na"] {
+    background-color: #e0f7fa;
+}
+
+a[href*="sobre"] {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+[id*="serv"] {
+    border: 1px dashed gray;
+    padding: 10px;
+}
+
+[id$="s"] {
+    color: teal;
+    font-style: italic;
+}

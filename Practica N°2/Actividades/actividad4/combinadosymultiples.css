@@ -1,0 +1,67 @@
+#inicio p {
+    color: blue;
+    font-weight: bold;
+}
+
+#servicios ul li {
+    color: green;
+    font-style: italic;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+label + input[type="text"] {
+    border: 2px solid red;
+    padding: 5px;
+}
+
+header + nav {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+form input[required], form textarea[required] {
+    border: 2px solid orange;
+}
+
+section#sobrenosotros p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+
+
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+    color: darkred;
+}
+
+section#inicio, section#servicios, section#contacto {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+
+a[href^="#"] {
+    color: purple;
+}
+
+a[href^="#"]:hover {
+    color: darkblue;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+
+form input:focus, form textarea:focus {
+    border-color: darkblue;
+    outline: none;
+}

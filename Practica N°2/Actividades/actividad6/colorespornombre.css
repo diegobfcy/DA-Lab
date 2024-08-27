@@ -1,0 +1,20 @@
+
+header {
+    background-color: lightblue;
+    color: navy;
+}
+
+
+nav a {
+    color: darkgreen;
+    background-color: lightyellow;
+    padding: 10px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

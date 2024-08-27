@@ -1,0 +1,28 @@
+h1 {
+    background-color: blue;
+}
+
+#inicio h2 {
+    color: bisque;
+    font-size: 20px;
+}
+
+#servicios ul li:first-child {
+    margin: 20px 0;
+}
+
+#servicios ul li:nth-child(2) {
+    font-weight: bold;
+}
+
+#contacto input[type="text"] {
+    background-color: coral;
+}
+
+#contacto label[for="email"] {
+    font-size: xx-large;
+}
+
+#contacto input[type="submit"] {
+    color: deeppink;
+}

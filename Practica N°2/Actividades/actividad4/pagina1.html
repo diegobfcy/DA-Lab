@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css vinculado</title>
+</head>
+<body>
+    <header>
+        <h1>Pagina</h1>
+        <p>Esta es una pagina en html</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobrenosotros">Sobre Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">contactoo</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>contenido de inicio</p>
+        </section>
+
+        <section id="sobrenosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>contenido sobre nosotros</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Servicio 1</li>
+                <li>Servicio 2</li>
+                <li>Servicio 3</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>contactoo</h2>
+            <form action="#">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Este es el footer</p>
+    </footer>
+    <link rel="stylesheet" href="./combinadosymultiples.css">
+</body>
+</html>

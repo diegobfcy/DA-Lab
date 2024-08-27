@@ -1,0 +1,37 @@
+
+#sobrenosotros {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+section {
+    padding: 5%;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+h2 {
+    margin-bottom: 0.5em;
+}
+input[type="text"], input[type="email"], textarea {
+    padding: 0.8em;
+}
+body {
+    font-size: 1rem;
+}
+
+
+nav a {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+footer p {
+    font-size: 0.9rem;
+    color: #555;
+}

@@ -1,0 +1,51 @@
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+#inicio {
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h1 {
+    font-size: 24pt;
+    margin-bottom: 10pt;
+}
+
+
+h2 {
+    font-size: 18pt;
+    margin-bottom: 8pt;
+}
+
+
+label {
+    font-size: 12pt;
+}
+
+#contacto {
+    width: 15cm;
+    height: 10cm;
+    background-color: #f2f2f2;
+    padding: 1cm;
+}
+
+footer {
+    padding: 2cm;
+    margin-top: 1cm;
+    text-align: center;
+}
+
+form {
+    padding: 1cm;
+    margin: 2cm;
+    border: 1px solid #ccc;
+}
