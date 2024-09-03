@@ -1,48 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  .item1 { grid-area: headerleft; }
-  .item2 { grid-area: midleft; }
-  .item3 { grid-area: midmid; }
-  .item4 { grid-area: midright; }
-  .item5 { grid-area: leftbottom; }
-  .item6 { grid-area: midbottom; }
-  .item7 { grid-area: headerright; }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
 
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'headerleft headerleft headerright headerright'
-      'midleft midmid midmid midright'
-      'leftbottom midbottom midbottom midright';
-    grid-gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-  }
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "headerleft headerleft headerright headerright"
+          "midleft midmid midmid midright"
+          "leftbottom midbottom midbottom midright";
+        grid-gap: 10px;
+        padding: 10px;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+      }
 
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-  }
-</style>
-</head>
-<body>
+      .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        color: white;
+        border-radius: 8px;
+      }
 
-<div class="grid-container">
-  <div class="item1">Header Left</div>
-  <div class="item7">Header Right</div>
-  <div class="item2">Menu</div>
-  <div class="item3">Main</div>
-  <div class="item4">Right</div>
-  <div class="item5">Footer Left</div>
-  <div class="item6">Footer Right</div>
-</div>
+      .item1 {
+        grid-area: headerleft;
+        display: flex;
+        background-color: #e76f51;
+      }
 
-</body>
+      .header-right-content {
+        flex: 1;
+        background-color: #e76f51; 
+        border-radius: 0 8px 8px 0;
+      }
+
+      .item2 {
+        grid-area: midleft;
+        background-color: #f4a261; 
+      }
+
+      .item3 {
+        grid-area: midmid;
+        background-color: #2a9d8f; 
+      }
+
+      .item4 {
+        grid-area: midright;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #e9c46a; 
+      }
+
+      .item4 img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+
+      .item5 {
+        grid-area: leftbottom;
+        background-color: #e76f51;
+      }
+
+      .item6 {
+        grid-area: midbottom;
+        background-color: #f4a261; 
+      }
+
+      .item7 {
+        grid-area: headerright;
+        background-color: #2a9d8f; 
+      }
+
+
+      @media (max-width: 1024px) {
+        .grid-container {
+          grid-template-areas:
+            "headerleft headerright"
+            "midleft midmid"
+            "midleft midright"
+            "leftbottom midbottom";
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto;
+        }
+
+        .item1 {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-areas:
+            "headerleft"
+            "headerright"
+            "midmid"
+            "midleft"
+            "midright"
+            "midbottom"
+            "leftbottom";
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+        }
+
+        .item1 {
+          flex-direction: column;
+          padding: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item1">Header Left</div>
+      <div class="item7">Header Right</div>
+      <div class="item2">Menu</div>
+      <div class="item3">Main</div>
+      <div class="item4">
+        <img src="https://via.placeholder.com/150" alt="Sample Image" />
+        <p>Hola</p>
+      </div>
+      <div class="item5">Footer Left</div>
+      <div class="item6">Footer Right</div>
+    </div>
+  </body>
 </html>
