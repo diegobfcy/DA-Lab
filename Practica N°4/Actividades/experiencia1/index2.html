@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración en Script</title>
+</head>
+<body>
+    <h1>Práctica de JavaScript: Código en Script</h1>
+    <button id="myButton">Haz clic aquí</button>
+    <p id="demo">
+        Haz doble clic en este texto para cambiar su color.
+    </p>
+
+    <script>
+        document.getElementById('myButton').onclick = function() {
+            alert('¡Hola! Este es un mensaje de alerta.');
+        };
+
+        document.getElementById('demo').ondblclick = function() {
+            this.style.color = 'red';
+        };
+    </script>
+</body>
+</html>
