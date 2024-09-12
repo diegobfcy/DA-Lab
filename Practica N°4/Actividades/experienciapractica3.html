@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const foo = () => { 
+        // console.log("foobar"); 
+        // } 
+        // foo();
+
+        // function sayHello() { 
+        // return "Hello, "; 
+        // } 
+        // function greeting(helloMessage, name) { 
+        // console.log(helloMessage() + name); 
+        // } 
+        // greeting(sayHello, "JavaScript!"); 
+
+        // function sayHello() { 
+        //     return () => { 
+        //         console.log("Hello!"); 
+        //     } 
+        // }
+        // sayHello()(); 
+
+        function makeFunc() { 
+        const name = 'Mozilla'; 
+        function displayName() { 
+            console.log(name); 
+        } 
+        return displayName; 
+        } 
+        
+        const myFunc = makeFunc(); 
+        myFunc();
+
+    </script>
+</body>
+</html>
