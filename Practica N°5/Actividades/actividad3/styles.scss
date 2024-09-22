@@ -1,0 +1,24 @@
+$colorPrincipal: #007bff;
+$colorAlPasar: #0056b3;
+
+.navbar {
+  background-color: $colorPrincipal;
+  .nav-link {
+    color: white;
+    &:hover {
+      color: $colorAlPasar;
+    }
+  }
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  .dropdown-menu {
+    background-color: $colorPrincipal;
+    .dropdown-item {
+      color: white;
+      &:hover {
+        background-color: $colorAlPasar;
+      }
+    }
+  }
+}
