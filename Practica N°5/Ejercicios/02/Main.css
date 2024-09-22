@@ -1,0 +1,13 @@
+.button {
+  padding: 8px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: #217dbb;
+}
+.button .icon {
+  margin-right: 8px;
+}/*# sourceMappingURL=Main.css.map */
