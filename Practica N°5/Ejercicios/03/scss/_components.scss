@@ -1,0 +1,18 @@
+.navbar {
+    background-color: $primary-color;
+    .nav-link {
+      color: white;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+  
+  .card {
+    @include border-radius(8px);
+    &:hover {
+      @include transition(all, 0.3s);
+      transform: scale(1.05);
+    }
+  }
+  
