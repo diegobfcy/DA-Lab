@@ -1,0 +1,17 @@
+// Punto D
+.button {
+    padding: $padding-small;
+    background-color: $primary-color;
+    color: white;
+    @include border-radius(5px);
+    @include transition(background-color, 0.3s);
+  
+    &:hover {
+      background-color: darken-color($primary-color, 10%);
+    }
+  
+    .icon {
+      margin-right: $padding-small;
+    }
+  }
+  

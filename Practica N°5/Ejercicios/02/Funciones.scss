@@ -1,0 +1,5 @@
+// Punto C
+@function darken-color($color, $percentage) {
+    @return darken($color, $percentage);
+  }
+  
