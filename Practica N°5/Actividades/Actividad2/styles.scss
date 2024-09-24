@@ -1,0 +1,64 @@
+// Definición de Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Helvetica Neue', sans-serif;
+$base-font-size: 16px;
+
+// Funciones Personalizadas
+@function rem($px) {
+  @return $px / 16 * 1rem;
+}
+
+@function color-lighten($color, $amount) {
+  @return lighten($color, $amount);
+}
+
+// Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// Uso de Variables, Funciones y Mixins
+body {
+  font-family: $font-stack;
+  font-size: rem($base-font-size);
+  color: $primary-color;
+}
+
+a {
+  color: color-lighten($primary-color, 20%);
+}
+
+// Anidamiento de Selectores
+.navbar {
+  background-color: $primary-color;
+  padding: 10px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.box {
+  @include border-radius(10px);
+  background-color: #f0f0f0;
+  padding: 20px;
+}
