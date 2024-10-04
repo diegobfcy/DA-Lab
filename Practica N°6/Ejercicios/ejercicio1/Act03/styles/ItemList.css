@@ -1,0 +1,25 @@
+.item-list {
+    margin: 20px;
+  }
+  
+  .item-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item-list li {
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .item-list button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

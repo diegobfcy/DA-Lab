@@ -1,25 +1,28 @@
-import React from 'react';
-import Comp1 from './Componentes/Comp1/Comp1';
-import Comp2 from './Componentes/Comp2/Comp2';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ItemList from './components/ItemList';
+import './index.css';
 
-const App = () => {
-  const data = [
-    { id: 1, name: 'Elemento 1' },
-    { id: 2, name: 'Elemento 2' },
-    { id: 3, name: 'Elemento 3' },
-  ];
-  const handleClick = () => {
-    console.log('Botón clicado en Comp1');
+function App() {
+  const [items, setItems] = useState([
+    { id: 1, name: 'Item 1', price: 100 },
+    { id: 2, name: 'Item 2', price: 200 },
+    { id: 3, name: 'Item 3', price: 300 }
+  ]);
+
+  const addItem = () => {
+    const newItem = { id: items.length + 1, name: `Item ${items.length + 1}`, price: (items.length + 1) * 100 };
+    setItems([...items, newItem]);
   };
 
   return (
-    <div>
-      <h1>Mi Aplicación</h1>
-      <Comp1 message="Hola desde Componente 1!" onClick={handleClick} />
-      <Comp2 items={data} />
+    <div className="App">
+      <Header />
+      <ItemList items={items} addItem={addItem} />
+      <Footer />
     </div>
   );
-};
-
+}
 
 export default App;
