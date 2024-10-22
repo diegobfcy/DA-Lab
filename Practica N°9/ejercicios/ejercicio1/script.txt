@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS inscripcion;
+
+USE inscripcion;
+
+CREATE TABLE IF NOT EXISTS usuario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    correo VARCHAR(255) UNIQUE NOT NULL,
+    contrasena VARCHAR(255) NOT NULL,
+    fecha_nacimiento DATE NOT NULL,
+    sexo ENUM('M', 'F') NOT NULL,
+    intereses TEXT,
+    aficiones TEXT,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE pasajeros (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nombre VARCHAR(255),
+fecha_nacimiento DATE,
+precio_base DECIMAL(10,2)
+);
